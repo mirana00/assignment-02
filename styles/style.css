@@ -27,17 +27,26 @@ a{
     border: 0px;
 }
 
+.section-bgc{
+    background-color:rgb(5, 5, 5);
+    color: white;
+   
+}
+.content-1{
+    padding: 100px 200px 10px;
+}
 /* banner */
 
 .banner{
     background:linear-gradient(180deg, #474747, #0e0d0d) ;
     color: white;
     max-width: 1440px;
-    height: 750px;
+    height: 650px;
 }
 
-.banner-content{
-    padding: 30px 160px 0px;
+.content{
+    padding: 30px 160px 10px;
+   
 
 }
 
@@ -137,13 +146,8 @@ h1{
     height: 550px;
 }
 
-/* .banner-img{
-    width: 349px;
-    height: 550px;
-} */
 
-
-/* box */
+/* box*/ 
 
 .main-box{
     display: flex;
@@ -196,8 +200,92 @@ h1{
     height: 40px;
 }
 
+/* changing habits */
 
+.habit-des{
+    text-align: center;
+    width: 630px;
+    margin-left: 200px;
+}
 
+h2{
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.p2{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* habit card */
+
+.habit-card{
+    width: 235px;
+    height: 275px;
+}
+.card-img{
+    border: 1px solid rgb(100, 100, 99);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+  
+}
+.card-des{
+    text-align: center;
+    margin-top: 20px;
+}
+.habit-h{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.p3{
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    font-weight: 300;
+}
+.main-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 80px;
+   gap: 30px;
+}
+
+/* extra mile */
+
+.extra-bgc{
+    background-color: rgb(34, 34, 34);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.extra{
+    width: 400px;
+    height: 300px;
+    padding:60px 50px;
+    
+}
+
+.extra h2{
+    font-size:50px;
+}
+
+.extra p, button{
+    margin-top: 20px;
+}
+
+.extra-img{
+    border-radius: 15px;
+    width: 360px;
+    height: 300px;
+}
 /* responsive */
 
 /* small device */
@@ -211,10 +299,14 @@ h1{
     .banner{
         height: 1120px;
     }
-    .banner-content{
-        padding: 30px 20px 0px;
+    .content{
+        padding: 30px 40px 0px;
     }
-      
+
+    /* shared */
+      .content-1{
+        padding: 10px 50px 20px 50px ;
+      }
     /* navbar */
     .menu-icon{
         display: block;
@@ -268,6 +360,40 @@ h1{
         width: 180px;
         height: 60px ;
     }
+
+    /* changing habits */
+
+    .habit-des{
+        width: 318px;
+        height: 124px;
+        margin-left: 70px;
+    }
+    
+    h2{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    
+    .p2{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+
+    .main-card{
+    
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 80px;
+       padding: 0px 100px 0px;
+    }
+    
+    /* extra mile */
+    .extra-bgc{
+        flex-direction: column;
+        padding: 20px 50px 20px;
+    }
+
 }
     
 /* medium device
