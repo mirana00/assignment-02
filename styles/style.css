@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/miama');
 *{
     margin: 0;
 }
@@ -34,6 +34,11 @@ a{
 }
 .content-1{
     padding: 100px 200px 10px;
+}
+
+.display{
+    display: flex;
+    justify-content: space-between;
 }
 /* banner */
 
@@ -119,8 +124,9 @@ h1{
 }
 
 .shape{
-    font-family: Miami;
+    font-family:'Miama';
     font-style: italic;
+    font-weight: 100;
 }
 
 .btn-1{
@@ -286,6 +292,117 @@ h2{
     width: 360px;
     height: 300px;
 }
+
+/* BMI calculator */
+
+/* bmi-calc-des */
+
+.bmi-calc-des{
+    width: 700px;
+    height: 200px;
+   text-align: left;
+   margin: 50px;
+}
+
+.BMI{
+    display: flex;
+    justify-content: center;
+}
+
+/* calculator */
+
+
+/* chart */
+
+ .div-bgc-1{
+    background-color: rgb(34, 34, 34);
+    color: white;
+ }
+
+
+.chart h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom:50px ;
+}
+th{
+    font-size: 15px;
+    font-weight: 600;
+    text-align:start;
+    padding: 15px 35px;
+
+}
+td{
+    padding: 15px 35px;
+}
+ 
+/* bmi calc */
+.calc{
+    width: 480px;
+    height: 500px;
+}
+.calc-des h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom:20px ;
+}
+
+form{
+    margin-top: 50px;
+}
+.form-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    width: 50%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(68, 68, 68);
+    color: rgb(148, 144, 144);
+    margin:5px;
+}
+
+input {
+    width: 45%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    margin:5px;
+}
+
+.form-div-1 select{
+    width: 98%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive */
 
 /* small device */
@@ -324,7 +441,7 @@ h2{
     .full-shape{
       flex-direction: column;
       padding: 30px 20px 0px;
-      align-items: center;
+      justify-content: center;
     }
 
     .tutorial{
@@ -394,20 +511,26 @@ h2{
         padding: 20px 50px 20px;
     }
 
-}
+    /* bmi calculator */
     
-/* medium device
-@media screen and (min-width: 576px) and (maz-width: 992) {
-    body{
-        width: 100%;
-    }
-    
-    .banner-content{
-        padding: 0px;
-    }
-    
-    .nav-content{
-        justify-content: space-between;
+    .display{
+        flex-direction: column;
+        justify-content: center;
     }
 
-} */
+    .chart{
+        margin-top:4rem;
+        margin-bottom: 4rem;
+
+    }
+    .calc-des h2{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .chart h2{
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+}
+    
