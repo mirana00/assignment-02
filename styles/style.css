@@ -30,10 +30,12 @@ a{
 .section-bgc{
     background-color:rgb(5, 5, 5);
     color: white;
+    max-width: 1440px;
    
 }
 .content-1{
     padding: 100px 200px 10px;
+   
 }
 
 .display{
@@ -46,7 +48,7 @@ a{
     background:linear-gradient(180deg, #474747, #0e0d0d) ;
     color: white;
     max-width: 1440px;
-    height: 650px;
+    height: 700px;
 }
 
 .content{
@@ -149,7 +151,7 @@ h1{
 .tutorial{
     background-image: url(../images/Images\ 2.png);
     background-repeat: no-repeat;
-    height: 550px;
+    height: 700px;
 }
 
 
@@ -299,7 +301,7 @@ h2{
 
 .bmi-calc-des{
     width: 700px;
-    height: 200px;
+    height: 100px;
    text-align: left;
    margin: 50px;
 }
@@ -316,7 +318,7 @@ h2{
 
  .div-bgc-1{
     background-color: rgb(34, 34, 34);
-    color: white;
+   color: white;
  }
 
 
@@ -379,6 +381,110 @@ input {
     width: 98%;
 }
 
+/* our team styles */
+.team{
+    display: flex;
+    justify-content: center;
+}
+.team-des{
+    text-align: center;
+    width: 580px;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+.coaches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    border-radius: 15px;
+}
+.coaches-card{
+    position: relative;
+    width: 285px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 30px;
+    margin:5px;
+    padding: 5px;
+   
+}
+
+.coaches img{
+    width: 100%;
+    height: 100%;
+
+
+}
+.coach-info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.coach-info p{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* footer */
+
+.foot-bgc{
+    background-color: rgb(34, 34, 34);
+   color: white;
+ }
+
+ .main-foot{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 5rem;
+ }
+ .fitness-div{
+    width: 440px;
+    height: 170px;
+ }
+
+ .fitness-div h1{
+    color: rgb(230, 83, 60);
+    font-size: 60px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.get-started{
+    width: 8rem;
+    height: 9rem;
+}
+
+.get-started h3{
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+.get-started p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+
+footer hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+}
+
+footer p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.rights{
+    text-align: center;
+}
 
 
 
@@ -408,13 +514,15 @@ input {
 /* small device */
 @media screen and (max-width: 576px) {
     
+
+    
     body{
         width: 576px;
         height: 100%;
     }
 
     .banner{
-        height: 1120px;
+        height: 1300px;
     }
     .content{
         padding: 30px 40px 0px;
@@ -445,7 +553,7 @@ input {
     }
 
     .tutorial{
-        margin-top: 100px;
+        margin-top:17rem;
         margin-left: 20px;
     }
 
@@ -531,6 +639,73 @@ input {
         font-size: 25px;
         font-weight: 700;
     }
+
+    /* trainer */
+
+    .coaches{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .coaches-card{
+        position: relative;
+        width: 440px;
+        height: 390px;
+        overflow: hidden;
+        border-radius: 30px;
+        margin:5px;
+        padding: 5px;
+       
+    }
+
+    /* footer */
+    
+   .footer-div{
+    display: flex;
+    flex-direction:column;
+   }
+
+   .main-foot{
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    gap: 25px;
+   }
+   
+   .fitness-div{
+    margin-top: 50px;
+    margin-bottom: 30px;
+ }
+
+
+
+   .get-started h3{
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+}
+.get-started p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.get-started{
+    width: 13rem;
+    height: 9rem;
+    margin-bottom: 7rem;
+}
+
+.fitness-div h1{
+    font-size: 70px;
+}
+
+.fitness-div p{
+    font-size: 20px
+}
+
+footer p{
+    font-size: 30px;
+}
 
 }
     
